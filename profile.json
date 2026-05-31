@@ -1,0 +1,27 @@
+{
+  "name": "Your Name",
+  "title": "AI Product Manager",
+  "email": "your.email@example.com",
+  "phone": "+1-XXX-XXX-XXXX",
+  "location": "Your City, Country",
+  "summary": "Experienced AI Product Manager with 5+ years driving AI/ML product strategy, roadmap development, and cross-functional team leadership. Proven track record of launching AI-powered products that deliver measurable business impact.",
+  "experience": [
+    {
+      "title": "Senior AI Product Manager",
+      "company": "Previous Company",
+      "duration": "2021 - Present",
+      "highlights": ["Led AI/ML product roadmap", "Managed cross-functional teams of 15+", "Launched 3 AI products generating $2M ARR"]
+    }
+  ],
+  "skills": ["AI/ML Product Strategy", "Roadmap Development", "Agile/Scrum", "Data Analysis", "Stakeholder Management", "LLM Applications", "Python basics", "SQL"],
+  "education": "B.Tech / MBA from reputed institution",
+  "resumePath": "./resume.pdf",
+  "linkedinUrl": "https://linkedin.com/in/yourprofile",
+  "githubUrl": "https://github.com/yourusername",
+  "portfolioUrl": "https://yourportfolio.com",
+  "achievements": [
+    "Shipped AI chatbot reducing support costs by 40%",
+    "Defined ML feature prioritization framework adopted company-wide",
+    "Built 0→1 AI product in under 6 months"
+  ]
+}

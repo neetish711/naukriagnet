@@ -1,0 +1,43 @@
+{
+  "name": "naukriagnet",
+  "version": "1.0.0",
+  "description": "AI Job Application Automation System",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "scrape": "tsx scripts/run-scraper.ts",
+    "setup": "tsx scripts/setup.ts",
+    "login": "tsx scripts/linkedin-login.ts"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "playwright": "^1.45.0",
+    "googleapis": "^140.0.0",
+    "google-auth-library": "^9.13.0",
+    "node-cron": "^3.0.3",
+    "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "winston": "^3.13.0",
+    "zod": "^3.23.8",
+    "tsx": "^4.16.2",
+    "dotenv": "^16.4.5",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "linkedin": {
+    "searchKeywords": [
+      "AI Product Manager hiring",
+      "Product Manager hiring",
+      "Hiring Product Manager",
+      "Hiring Product Owner",
+      "Product Lead hiring",
+      "#hiring #productmanager",
+      "#hiring #aiproductmanager"
+    ],
+    "searchType": "posts",
+    "sortBy": "latest",
+    "maxPostsPerKeyword": 20,
+    "delayBetweenSearchesMs": 3000,
+    "delayBetweenScrollsMs": 1500
+  },
+  "email": {
+    "dailySendLimit": 20,
+    "delayBetweenEmailsMs": 5000,
+    "subjectTemplate": "Application for {jobTitle} Role - {name}",
+    "maxEmailLength": 150
+  },
+  "ollama": {
+    "model": "qwen3:14b",
+    "baseUrl": "http://localhost:11434",
+    "temperature": 0.7,
+    "timeout": 60000
+  },
+  "scheduler": {
+    "enabled": false,
+    "scrapeSchedule": "0 9 * * 1-5",
+    "sendSchedule": "0 10 * * 1-5",
+    "timezone": "Asia/Kolkata"
+  },
+  "relevanceScoreThreshold": 0.6,
+  "sheets": {
+    "sheetName": "Applications",
+    "logSheetName": "Logs"
+  }
+}
