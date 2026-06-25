@@ -1,0 +1,44 @@
+personal:
+  name: ""
+  email: ""
+  phone: ""
+  linkedin: ""
+  github: ""
+  location: ""
+
+resume_path: "assets/resume.pdf"
+
+job_preferences:
+  titles:
+    - "AI Engineer"
+    - "ML Engineer"
+    - "Software Engineer"
+  locations:
+    - "Remote"
+    - "Bangalore"
+    - "Mumbai"
+  min_score: 7
+  max_daily_applications: 30
+  bad_words:
+    - "unpaid"
+    - "commission only"
+    - "no experience"
+  good_words:
+    - "LLM"
+    - "agentic"
+    - "RAG"
+    - "Python"
+  exclude_companies: []
+
+experience_summary: |
+  Fill in a 3-5 sentence summary of your background to help the AI tailor
+  your resume and cover letters. Example:
+  "5 years building Python backends and ML pipelines. Led RAG system at
+  Acme Corp serving 1M users. Strong in LangChain, FastAPI, and AWS."
+
+skills:
+  - Python
+  - Machine Learning
+  - LLM / RAG
+  - FastAPI
+  - SQL

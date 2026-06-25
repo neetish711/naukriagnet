@@ -1,0 +1,28 @@
+good_words:
+  - LLM
+  - agentic
+  - RAG
+  - Python
+  - machine learning
+  - deep learning
+  - NLP
+  - transformer
+  - GenAI
+
+bad_words:
+  - unpaid
+  - commission only
+  - no experience required
+  - intern
+  - "0 experience"
+
+min_score: 7
+
+# Domains/companies to always skip
+exclude_domains: []
+
+# Job title fragments to always skip
+exclude_title_fragments:
+  - "recruiter"
+  - "sales"
+  - "marketing"
