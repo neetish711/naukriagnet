@@ -278,15 +278,21 @@ def run(dry_run: bool = False) -> int:
         task = progress.add_task("Sending emails...", total=len(applied))
 
         for rec in applied:
-            # Find recruiter email
-            email = find_recruiter_email(rec.company, secrets)
-            if not email:
-                logger.warning(f"  Skipping {rec.company} — no email found")
-                progress.advance(task)
-                continue
+            # Find recruiter email (mocked offline in dry-run)
+            if dry_run:
+                email = f"recruiting@{_domain_from_company(rec.company)}"
+                body = (
+                    f"[DRY-RUN] Cold email for {rec.role} at {rec.company}: "
+                    f"who I am, why I'm excited about {rec.company}, a 15-min ask."
+                )
+            else:
+                email = find_recruiter_email(rec.company, secrets)
+                if not email:
+                    logger.warning(f"  Skipping {rec.company} — no email found")
+                    progress.advance(task)
+                    continue
+                body = _generate_cold_email(rec, profile, secrets)
 
-            # Generate email
-            body = _generate_cold_email(rec, profile, secrets)
             subject = f"Re: {rec.role} application — {personal.get('name', 'Applicant')}"
 
             # Send
