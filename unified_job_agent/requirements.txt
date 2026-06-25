@@ -1,0 +1,41 @@
+# Browser automation
+selenium>=4.18.0
+playwright>=1.42.0
+undetected-chromedriver>=3.5.5
+
+# Job scraping
+python-jobspy>=1.1.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Data / config
+pydantic>=2.0.0
+pyyaml>=6.0.1
+openpyxl>=3.1.2
+sqlalchemy>=2.0.0
+
+# AI / LLM
+ollama>=0.1.8
+openai>=1.12.0
+
+# Document generation
+python-docx>=1.1.0
+reportlab>=4.1.0
+
+# PDF reading (optional, for reading base resume)
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+
+# Terminal UI
+rich>=13.7.0
+click>=8.1.7
+
+# Email / networking
+dnspython>=2.6.1
+
+# Scheduling
+schedule>=1.2.0
+
+# Hunter.io SDK (optional — direct API calls used as fallback)
+# pyhunter>=1.7.0
